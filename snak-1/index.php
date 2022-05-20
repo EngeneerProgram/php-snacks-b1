@@ -25,14 +25,14 @@ $play_basket = [
         'squadra_casa' => "Firenza",
         'squadra_fuori_casa' => "Bari",
         'punti_casa' => '30',
-        'punti_fuoricasa' => '60',
-        
+        'punti_fuoricasa' => '40',
+    
     ],
 
 ];
 
 foreach($play_basket as $basket){
-    echo "<h1> $basket[squadra_casa] - $basket[squadra_fuori_casa] || $basket[punti_casa] - $basket[puntifuoricasa]";
+    echo "<h1> $basket[squadra_casa] - $basket[squadra_fuori_casa] || $basket[punti_casa] - $basket[punti_fuoricasa]";
 }
 
 
