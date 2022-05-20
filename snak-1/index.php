@@ -9,25 +9,35 @@ $play_basket = [
     [
         'squadra_casa' => "Milano",
         'squadra_fuori_casa' => "Roma",
-        "punti" => 58-70,
+        'punti_casa' => '50',
+        'punti_fuoricasa' => '30',
     ],
 
     [
         'squadra_casa' => "Catania",
         'squadra_fuori_casa' => "Messina",
-        "punti" => 50-15,
+        'punti_casa' => '20',
+        'punti_fuoricasa' => '10',
+        
     ],
 
     [
         'squadra_casa' => "Firenza",
         'squadra_fuori_casa' => "Bari",
-        "punti" => 20-70,
+        'punti_casa' => '30',
+        'punti_fuoricasa' => '60',
+        
     ],
 
-]
+];
 
-for($i = 0; i<$play_basket; i++){
-    
+foreach($play_basket as $basket){
+    echo "<h1> $basket[squadra_casa] - $basket[squadra_fuori_casa] || $basket[punti_casa] - $basket[puntifuoricasa]";
 }
 
+
+
+
+
 ?>
+
