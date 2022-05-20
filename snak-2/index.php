@@ -6,12 +6,14 @@ mail e age e verificare (cercando i metodi
  altrimenti “Accesso negato” -->
 
  <?php
-var_dump($_GET);
+
 $name = $_GET['name'];
 $email = $_GET['email'];
 $eta = $_GET['eta'];
-
-if(strlen($name)&& strpos($email, '.')&& strpos($email, '@')&&is_numeric($eta)){
+var_dump($name);
+var_dump($email);
+var_dump($eta);
+if(strlen($name < 3) && strpos($email, '.') && strpos($email, '@') && is_numeric($eta)){
     echo "Accesso Riuscito!";
 }else{
     echo "Accesso Negato!";
