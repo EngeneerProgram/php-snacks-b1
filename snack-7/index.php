@@ -7,32 +7,32 @@
 $students=[
 
     [
-        'name' => 'rosario',
-        'cognome' => 'garufi',
+        'name' => 'Rosario',
+        'cognome' => 'Garufi',
         'voti' => 
         [
             9,8,6,7,4
         ]
     ],
     [
-        'name' => 'rosario',
-        'cognome' => 'garufi',
+        'name' => 'Gianluca',
+        'cognome' => 'Nossolino',
         'voti' => 
         [
             9,10,5,5,8
         ]
     ],
     [
-        'name' => 'rosario',
-        'cognome' => 'garufi',
+        'name' => 'Giovanni',
+        'cognome' => 'Di Raimondo',
         'voti' => 
         [
             9,3,6,5,2
         ]
     ],
     [
-        'name' => 'rosario',
-        'cognome' => 'garufi',
+        'name' => 'Mirko',
+        'cognome' => 'Campagnolo',
         'voti' => 
         [
             9,10,6,10,7
@@ -42,9 +42,25 @@ $students=[
     
 ];
 
-for($i=0; $i<count($students); $i++){
-    $student = $students[i];
-    $media = number_format(array_sum($student['voti']) / count($student['voti']), 2, '.', '');
-    echo "<h2>$student[name] $student[cosgnome] <h3>Media: $media</h3></h2>";
+// for($i=0; $i<count($students); $i++){
+//     $student = $students[i];
+//     $media = number_format(array_sum($student['voti']) / count($student['voti']), 2, '.', '');
+//     echo "<h2>$student[name] $student[cognome] <h3>Media: $media</h3></h2>";
+// }
+
+for($i = 0; $i<count($students); $i++){
+    $student = $students[$i];
+    
+    //sum number inside the array "voti"
+   $sum= array_sum($student['voti']);
+   //var_dump($sum);
+   //Average
+   $average = $sum / count($student['voti']);
+   //average of sum / number of number 
+   //var_dump($average);
+   echo "<h1>Lo Studente $student[name] $student[cognome] Ha la media di :  $average</h1>";
+   
+
+
 }
 ?>
